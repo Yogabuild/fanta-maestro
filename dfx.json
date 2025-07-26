@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "fanta-maestro-backend": {
+      "declarations": {
+        "node_compatibility": true
+      },
+      "main": "src/fanta-maestro-backend/main.mo",
+      "type": "motoko"
+    },
+    "fanta-maestro-frontend": {
+      "dependencies": [
+        "fanta-maestro-backend"
+      ],
+      "source": [
+        "src/fanta-maestro-frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "fanta-maestro-frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
